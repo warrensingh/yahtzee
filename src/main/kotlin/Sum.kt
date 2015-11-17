@@ -1,6 +1,6 @@
 object Sum {
 
-    fun calculate(dice: Set<Int>) =
+    fun calculate(dice: List<Int>) =
             dice.reduce { a, b -> a+ b}
 
 }
