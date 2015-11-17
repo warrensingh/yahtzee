@@ -1,12 +1,17 @@
 object RollDice {
 
-    fun apply(dice: Set<Int>) =
-            dice.map {
+    fun apply(numDice: Int): List<Int> {
 
-                val rand = Math.random()
-                assign(rand)
-                
-            }
+        val dice = IntArray(numDice)
+
+        return dice.map {
+
+            val rand = Math.random()
+            assign(rand)
+
+        }
+
+    }
 
     private fun assign(rand: Double): Int {
 
